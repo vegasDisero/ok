@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+            <li class="lista-menu_item"><a href="#">acai <A> </a><li> 
+            <li class="lista-menu_item"><a href="#">brigadeiro <A> </a><li>
+            <li class="lista-menu_item"><a href="#">churrasco <A> </a><li>
+            <li class="lista-menu_item"><a href="#">coxinha <A> </a><li>
+            <li class="lista-menu_item"><a href="#">feijoada <A> </a><li>
+            <li class="lista-menu_item"><a href="#">poçoca <A> </a><li>
+            <li class="lista-menu_item"><a href="#">pamonha <A> </a><li>
+            <li class="lista-menu_item"><a href="#">pao de queijo <A> </a><li>
+            <li class="lista-menu_item"><a href="#">pastel<A> </a><li>
+            </ul>
+
+           <a href="#"><img class="container__imagem" src="img/images.jpeg" alt="panela"></a>
+           <h1 class="titulo__cabecalho">receitas brasileiras</h1>
+        </div>
+        <div class="container">
+           <a href="#"><img class="container__imagem" src="img/Favoritos.svg" alt="meus Favoritos"></a>
+           <a href="#"><img class="container__imagem" src="img/Emprestimos.svg" alt="meus empréstimos"></a>
+           <a href="#"><img class="container__imagem" src="img/Usuario.svg" alt="meu perfil"></a>
+        </div>
+    </header>
+    <section class="gridimg">
+        <div class="div-todasimagens">
+            <span>
+            </span>
+            <div class="div-imagem">
+                <img class="Imagem" src="img/acai.jpeg" alt="">
+                <h1 class="titulo">açai</h1>
+            </div>
+            <div class="div-imagem">
+                <img class="Imagem" src="img/brigadeiro.jpeg" alt="">
+                <h1 class="titulo">brigadeiro</h1>
+            </div>
+            <div class="div-imagem"> 
+                <img class="Imagem" src="img/churrasco.jpeg" alt="">
+                <h1 class="titulo">churrasco</h1>
+            </div>
+            <span>
+            </span>
+            <span>
+            </span>
+            <div class="div-imagem">
+                <img class="Imagem" src="img/coxinha.jpeg" alt="">
+                <h1 class="titulo">coxinha</h1>
+            </div>
+    
+            <div class="div-imagem">
+                <img class="Imagem" src="img/feijoada.jpeg" alt="">
+                <h1 class="titulo">feijoada</h1>
+            </div>
+            <div class="div-imagem">
+                <img class="Imagem" src="img/pacoca.jpeg" alt="">
+                <h1 class="titulo">paçoca</h1>
+            </div>
+            <span>
+            </span>
+            <span>
+            </span>
+            <div class="div-imagem">
+                <img class="Imagem" src="img/pamonha.jpeg" alt="">
+                <h1 class="titulo">pamonha</h1>
+            </div>
+            <div class="div-imagem">
+                <img class="Imagem" src="img/paodequeijo.jpeg" alt="">
+                <h1 class="titulo">pao de queijo</h1>
+            </div>
+            <div class="div-imagem">
+                <img class="Imagem" src="img/pastel.jpeg" alt="">
+                <h1 class="titulo">pastel</h1>
+            </div>
+        </div>
+
+    </section>
+    <section>
+    </section>
+    <section class="carrossel">
+    <h2 class="carrossel__titulo">Outras comidas</h2>
+   <!-- Slider main container -->
+    <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="img/Rectangle 1.svg" alt=""></div>
+      <div class="swiper-slide"><img src="img/Rectangle 10.svg" alt=""></div>
+      <div class="swiper-slide"><img src="img/Rectangle 3.svg" alt=""></div>
+      <div class="swiper-slide"><img src="img/Rectangle 4.svg" alt=""></div>
+      <div class="swiper-slide"><img src="img/Rectangle 5.svg" alt=""></div>
+      <div class="swiper-slide"><img src="img/Rectangle 6.svg" alt=""></div>
+      <div class="swiper-slide"><img src="img/Rectangle 7.svg" alt=""></div>
+      <div class="swiper-slide"><img src="img/Rectangle 8.svg" alt=""></div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+ <section>
+<footer>
+    <ul class="rodape" ><p>
+        COLEGIO COSTA E SILVA
+     </p>
+    <img src="img/download.jpeg" alt="">
+    </ul>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+          spaceBetween: 10,
+          slidesPerView:3,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+      });
+    </script>
+    </section>
+</body>
+</html>
